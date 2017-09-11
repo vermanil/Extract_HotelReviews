@@ -114,6 +114,7 @@ def get_reviews(url,requested_date=None):
 	driver.quit()
 	return review_data
 
-# if __name__ == "__main__":
-# 	url = "https://www.booking.com/hotel/in/oyo-rooms-mdi-gurgaon.en-gb.html?label=gen173nr-1DCAEoggJCAlhYSDNiBW5vcmVmaGyIAQGYAS7CAQN4MTHIAQzYAQPoAQGSAgF5qAID;sid=a754ebfbf9f0fd9261e4b35cb80d87ca;dest_id=-2096897;dest_type=city;dist=0;group_adults=2;hpos=3;room1=A%2CA;sb_price_type=total;srfid=470514ac9e16934f19b8790c82a96b6d176bcff8X3;type=total;ucfs=1&#hotelTmpl"
-# 	print(get_reviews(url))
+if __name__ == "__main__":
+	url = input("Give the Url Of Hotel You want")
+	# url = "https://www.booking.com/hotel/in/oyo-rooms-mdi-gurgaon.en-gb.html?label=gen173nr-1DCAEoggJCAlhYSDNiBW5vcmVmaGyIAQGYAS7CAQN4MTHIAQzYAQPoAQGSAgF5qAID;sid=a754ebfbf9f0fd9261e4b35cb80d87ca;dest_id=-2096897;dest_type=city;dist=0;group_adults=2;hpos=3;room1=A%2CA;sb_price_type=total;srfid=470514ac9e16934f19b8790c82a96b6d176bcff8X3;type=total;ucfs=1&#hotelTmpl"
+	print(get_reviews(url))
